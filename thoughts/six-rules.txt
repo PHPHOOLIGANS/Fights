@@ -11,9 +11,9 @@ development are not new. They've probably already been solved in other areas of
 expertise. As the largest problem in programming is communication, we are lucky 
 to have many sources to base our solutions on.
 
-One of the sources that we think can be beneficial is George Orwell's "Politics and 
-the English Language" in which he proposes six rules to help people write neater 
-and more understandable text:
+One of the sources that we think can be beneficial is George Orwell's "Politics 
+and the English Language" in which he proposes six rules to help people write 
+neater and more understandable text:
 
 1. Never use a metaphor, simile, or other figure of speech which you are used to seeing in print.
 2. Never use a long word where a short one will do.
@@ -54,7 +54,6 @@ If we substitute the word "word" in rules two and three and the word "say" in
 rule six for the word "code" (and edit for the sake of sanity and readability), 
 these rules still hold their own.
 
-<!-- 
 The main reason for these rules, besides legibility, is courteousness. Or, to 
 adhere  to rule nr.2: Being Polite. The rudest code is not the code that stinks 
 but the code that does not work. Poorly written, bug-ridden, brittle code can 
@@ -64,7 +63,6 @@ is code that works like it should, with clearly defined and predictable behaviou
 With this in mind, rule number six becomes:
 
 > Break any of these rules sooner than code anything outright barbarous.
--->
 
 ### Rule nr.4
 

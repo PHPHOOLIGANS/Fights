@@ -1,0 +1,84 @@
+php hooligans
+
+evaluatie praatje
+
+    - intro korter, meer to the point,
+        vertellen wie we zijn
+        uitleggen wat we gaan doen, minder waarom
+    - fights beter uitwerken, sommige samenvoegen
+        oop / interitance bij elkaar
+    - per fight slides maken
+        - mini presentatie en daarna commentaar vragen
+        - drill down structuur
+            bepaalde dingen zijn gebaseerd op andere dingen, als je die niet kent of niet gelooft, dan moet je die ook erbij kunnen pakken
+            ook kun je zo je bronnen erbij pakken
+        - meer stijl / attitude / humor, of het helemaal niet doen
+            geen sarcasme
+    - troll slides / yomama slides
+    - een afronding / conclusie toevoegen
+        - mensen vaak wel met de punten eens, maar ze worden niet vaak gedaan, waarom niet?
+            wat houd mensen tegen?
+        - als mensen het niet met de punten eens waren iets anders verzinnen? verwijzen naar website met meer informatie en vooral
+            discussie mogelijkheden.
+    - '_your_ url routin sukcs'
+        - verschil tussen early en late binding en tightly vs loosely coupled
+            early binding  ----------------------------------- late binding
+            write/build - ( compile - link ) - configuration - data - input
+            stoel - verstelbare stoel - elketrisch verstelbare stoel - automatische gebruiker herkenning ( eoa mercedes herkent gebruiker aan gewicht en stelt stoel automatisch in )
+            referenties: alan kay - as late as possible binding of everything
+        - code voorbeelden voor meest gebruikte frameworks erbij zoeken, uit eigen examples
+
+
+actiepunten
+!    - bestaande slides op joind.in koppelen
+!    - abstract van ons praatje doen
+!    - website maken voor php hooligans
+        - promo voor de hooligan ideeen
+        - zelfde info als in de slides, maar dan misschien uitgebreider
+        - mogelijkheid tot commentaar
+        - doel: naast php the right way een meer opionated en meer design oriented site
+        - dyslexia font gebruiken voor website en slides, voor alles.
+    - praatje structureren
+        - stijl kiezen wel/geen humor, zo ja, wat en testen
+            - sjaaltje? shirtjes? net pak, wollen jas en sjaaltje.
+!                - sjaaltjes regelen
+                - tijdens conferentie met sjaaltjes om rond lopen, alcohol vrij biertje in de hand
+            - geen dogtags van de conferentie om je nek laten hangen
+        - intro en outro
+            - sjaaltjes of andere prijzen weggeven aan beste publiek participant
+
+        - fights herstructureren
+            - welke fights bevatten welke info en achtergrond data
+            - wat moet je al doen / weten voordat je op dit punt uitkomt ( prerequisites )
+                - sommige fights pas beschikbaar maken als eerdere fight geweest is
+!            - als eerste URL routing uitwerken?
+        - uitzoeken hoe we het praatje schalen naar grotere zaal
+            - microfoons? extra mensen met shirtjes?
+            - referee? wie - credibility belangrijk, shirtje en fluitje
+     - marketing/communicatie
+         - blog/artikelen in php-magazine/?
+         - welk zijn er, ook online, en is dit zinnig?
+
+
+php hooligans verder
+    - praatje houden bij bedrijven
+    - tutorial sessies bouwen
+    - inhuren van de hooligans bij bedrijf - hun code door de hooligan mangel halen
+    - boek schrijven
+
+
+php code analysis online
+    - saas
+    - github repo's analyseren
+    - worker stijl
+    - komt 1 getal uit, met drilldown
+        - getal volgens onze weging opgebouwd, maar aanpasbaar naar eigen inzicht
+    - ook koppelen aan personen
+        - alle code op github van een persoon - zijn eigen repositories, geen clones van anderen - hoe uitvinden?
+        - alle commits/pull requests van iemand over een bepaalde periode
+
+-------
+
+
+loose coupling and late binding
+    uitleg voor bijv. url routing en class inheritance

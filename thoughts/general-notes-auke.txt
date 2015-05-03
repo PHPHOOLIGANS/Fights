@@ -1,0 +1,53 @@
+The first thing to understand is that programming is very new, we don't actually know how to do it - in a scientific sense.
+In fact in a lot of important ways we are no further to a solution than in the 1970's.
+
+
+The second thing is that there are a few fundamentally different approaches to programming languages. In this case I mean strictly typed and compiled languages, loosely typed and non compiled languages and functional programming languages.
+
+I mention functional languages seperately because they are so fundamentally different and cannot easily be included in either of the two other categories.
+
+The core principles of each of these categories and the reason for there creation and popularity are very different. Languages can look superficially similar but behave in vastly different way. Javascript superficially looks like C, yet if you try to program in it as if it is C will only lead
+to frustration.
+
+The main advantage of a strictly typed and compiled language is that the compiler can recognise simple mistakes that we humand are rather poor at spotting. By finding these errors on compile time you can fix the problem before giving the finished product to the user. However its use forces a specific way of programming where the type of a data element is elevated to a much higher level of importance than we humans would otherwise assign it. In effect compilers and languages focus on type-safety because it is one of the causes of bugs which we actually understand in some way and found a solution for.
+
+However strict types are only sensible if we have a compile step, an automated process that parses and analyses the full program and checks if all types match up everywhere. In essence if the language is compiled.
+
+In a non-compiled or script language there is no such step. This means that type checking is suddenly much less valuable, it cannot guarantee type safety. By trying to force something like type checking onto a language which works in a fundamentally incompatible way you instead gain all the drawbacks and none of the advantages.
+
+One of the advantages of a loosely typed and non-compiled language is that generally it has a much higher level of expressiveness. This means that you can write a program to solve a specific problem with less lines of code ( or tokens ) in a script language than in a compiled language.
+
+By embracing the fact that data can be any type and writing code that incorporates this as a good thing you can gain a lot of expressiveness. You can call this duck-typing or polymorphism, the principle is the same - bind decisions as late as possible to match the data.
+
+
+The third thing is that software complexity is the main problem we face - and there is no solution yet. We do know a few causes of complexity. One of the main contenders is shared state. Calling a function that secretly accesses a global variable and changes its value. Unless you know and understand that that function is doing that, you will be surprised. Complexity in software is mainly encountered as an abundance of unpleasant surprises. It often results in defensive coding and cargo cult programming, which in turn feed the complexity beast.
+
+
+Given these three relatively uncontested statements, we can say the following:
+
+PHP is not a bad language. In fact its rather good at what it is designed for: creating data driven, request-based web applications.
+
+PHP is not java, it cannot be java, it must not try to become java. I'm not saying Java is bad, though it is. It's just a fundamentally different approach.
+
+PHP is not finished, it may become superceded and irrelevant in the future, but it isn't today. It would be a good thing if it became irrelevant, it would mean we would have something better, that we understood the problems of writing software in this domain better than we do now.
+
+
+So what should we do?
+
+I think that if you want to look at other programming languages to see what good ideas are developed, you should not look at the compiled languages or how they are used. The structure of any compiled program will always be fundamentally different from a dynamic program. Copying design patterns and API's from the java world is a recipe for disaster. PHPCR is one example of this, in my opinion. Another bad example is the DOMDocument mess in PHP. A much better way to implement DOM parsing is simpleXML, though that too has a few unfortunate flaws - namespaces being the most obvious.
+
+Design patterns in itself aren't a bad idea, but you cannot expect to copy a design pattern from a compiled language stack and copy it verbatim to PHP and still have a good pattern. The MVC pattern's pervasiveness in PHP is almost offensive. This specific pattern was made for user interfaces in a GUI and has now been hyjacked to become the basis of the entire application architecture in PHP. It cannot bear this responsibility and our attempts to force it only result in complex and brittle solutions.
+
+What we need is our own design patterns, based on the most successfull PHP projects. Success here not defined as most used, but instead as most admired and most easily adapted and maintained. We don't need to look only in PHP software, but we should at least stick to software and languages in the same problem domain: server side and request-response based dynamic languages.
+
+If you want to copy approaches from other languages, python and ruby aren't a bad place to start - and thankfully this has happened. You should also include javascript.
+
+But most importantly we should look at PHP and try to understand why it is so succesfull. Why it is so good at what we use it for.
+
+One of the very good features of PHP is called its 'share nothing' architecture. There are a lot of nay-sayers who say that this is not a feature but one of the problems of PHP. And certainly if you want to write a long-running daemon, this architecture and its consequences don't help. So don't write that deamon in PHP. But by making each request start from scratch PHP has gained a stability and scalability that is impossible to match without very complex and hard to maintain support software. Think about Apache Tomcat as the converse of this approach.
+
+Another good feature of PHP is its explicit scoping. There are only two variable scopes in PHP, global scope and function scope and variables from the global scope must be explicitly included in the function scope if you want to access them. Ok, you also have object scope - which is explicit through the $this keyword - and recently we got closures which - uniquely in PHP - also must be explicitly included. All this means that PHP helps you to avoid shared state in many ways, thereby keeping the software complexity down.
+
+Finally PHP has a basic type that is so usefull it has prevented entire sets of libraries common in other languages from even appearing: the array. In fact the PHP array is not an array at all, it is a fast hash which importantly is still passed by value. If you pass an array as an argument to a function, you know that the array won't change ( unless you call sort.... oops ). Instead if inside the function the array is changed, PHP creates a copy, but only if changed. This keeps the performance up and keeps your array safe.
+
+To see an example of why this is important, just take a look at the new DateTime class and more specifically the very recent addition of the ImmutableDateTime class.

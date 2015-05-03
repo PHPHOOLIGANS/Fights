@@ -1,0 +1,4 @@
+On 5-9-2013 17:19, Ben Peachey wrote:
+Ik denk dat je http://en.wikipedia.org/wiki/A_Pattern_Language
+bedoelde van http://en.wikipedia.org/wiki/Christopher_Alexander
+Yup, dat is het origineel. En daarna is er nog een boek gekomen hoe dit ook op software toe te passen was. En toen pas het boek van de gang of four... Maar ik kan er naast zitten :)

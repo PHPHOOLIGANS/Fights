@@ -2,25 +2,25 @@
 ================================================================================
 Level of Complexity
 --------------------------------------------------------------------------------
-    
+
     1. Mix HTML and PHP                                     (as simple as it gets)
     2. Put functionality in functions                       (re-usability)
-    3. Put functions in seperate files                      (maintainability)
+    3. Put functions in separate files                      (maintainability)
 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     4. Use classes to keep code that looks alike together   (modularity)
     5. Use namespaces to create package-style containers    (seperation of concerns)
 
---------------------------------------------------------------------------------
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    6. Use objects and accompanying mechanisms to keep complexity managable (complexity)
-    7. Class hierarchy (inheritance over composition)
+    6. Use objects and accompanying mechanisms to keep things manageable (causes complexity!)
+    7. Use class hierarchy for variations                   (causing inheritance over composition)
 
 ================================================================================
 
 
-There are no rules, merely guidelines. 
+There are no rules, merely guidelines.
 Also, there will always be exceptions to rules, so rules are per definition meant to be broken.
 
 There is only one rule: DOES IT WORK? DOES IT FIX THE PROBLEM?
