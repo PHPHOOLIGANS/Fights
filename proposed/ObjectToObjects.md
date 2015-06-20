@@ -20,9 +20,9 @@ re-But...tals
 In the wild
 -----------
 
-- DateTime, part of PHP. There is now also an ImmutableDateTime. Guess why.
+- [DateTime](http://php.net/manual/en/class.datetimeimmutable.php), part of PHP. There is now also an ImmutableDateTime. Guess why.
 
-- PSR-7: URL class ->withMethod('OPTIONS') - this is good btw.
+- [PSR-7: URI interface](http://www.php-fig.org/psr/psr-7/#3.5-psr\http\message\uriinterface) ->withPort(80) - this is good.
 
 Elaboration
 -----------
@@ -33,10 +33,10 @@ other parts of a program. We already know this. That is why global variables are
 can change one and a totally unrelated part ( or so you thought ) will suddenly behave differently. This is also why we
 use dependency injection ( note: not service locators, there is a difference ).
 
-By using basic types PHP gives you a great boon, called 'pass by value'. So if I call a function with a variable and the 
+Using basic types PHP gives you a great boon, called 'pass by value'. So if I call a function with a variable and the 
 function changes that variable and returns, your variable hasn't changed. The function changed its own internal copy of 
-it. Whatever happens inside the function is of no concerne to you. You can use the function as a black box. This works
-for booleans, integers, floats, strings and even arrays. But not for objects.
+the variable. Whatever happens inside the function is of no concern to you. You can use the function as a black box. This works
+for booleans, integers, floats, strings and even arrays. *But not for objects*.
 
 Objects are always passed by reference (Well.. actually it's something almost like a reference but slightly different, 
 doesn't matter for this case). This means that if you pass objects as arguments, the object can be changed by the function
